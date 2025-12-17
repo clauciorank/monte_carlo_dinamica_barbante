@@ -80,7 +80,6 @@ df_medias <- all_info |>
   summarise(media_valor = mean(resultados),
             p_95 = quantile(resultados, .99),
             p_05 = quantile(resultados, .05))
- 
 
 all_info |> 
   ggplot(aes(resultados))+
